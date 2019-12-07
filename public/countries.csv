@@ -1,0 +1,51 @@
+id,name,nationality,number_of_paintings,changes in number of paintings,row,col,x,y,append,rectangle-x1,rectangle-y1,rectwidth,rect-height
+49,Jackson Pollock,American,12,,6,2,201,120,,,,,
+45,Andy Warhol,American,80,,10,8,119,120,American,119,110,100,2
+9,Gustav Klimt,Austrian,58,from 59 to 58,10,6,235,120,Austrian,235,110,58,2
+4,Rene Magritte,Belgian,97,,10,10,309,120,Belgian,309,110,98,2
+36,William Turner,British,32,from 33 to 32,11,3,525,120,,,,,
+20,Alfred Sisley,British,114,,12,10,423,120,British,423,110,130,2
+10,Hieronymus Bosch,Dutch,68,from 69 to 68,9,8,572,242,,,,,
+14,Peter Paul Rubens,Dutch,71,,9,8,654,242,,,,,
+31,Rembrandt,Dutch,131,,9,15,736,242,,,,,
+8,Vincent van Gogh,Dutch,439,,12,37,572,120,Dutch,572,110,368,2
+43,Piet Mondrian,Dutch,41,from 42 to 41,9,5,888,242,,,,,
+29,Jan van Eyck,Flemish,40,from 41 to 40,7,6,956,232,,,,,
+21,Pieter Bruegel,Flemish,65,from 67 to 65,11,6,956,120,Flemish,956,110,58,2
+39,Eugene Delacroix,French,16,,4,4,472,436,,,,,
+34,Gustave Courbet,French,29,from 30 to 29,4,8,226,436,,,,,
+35,Camille Pissarro,French,39,changed from 40 to 39,3,10,308,436,,,,,
+6,Edouard Manet,French,44,changed from 45 to 44,8,6,156,282,,,,,
+30,Edgar Degas,French,307,changed from 308 to 307,7,44,114,364,,,,,
+38,Paul Cezanne,French,23,from 24 to 23,4,6,410,436,,,,,
+3,Claude Monet,French,32,,8,4,114,282,French,114,272,442,2
+15,Pierre-Auguste Renoir,French,167,from 168 to 167,8,21,218,282,,,,,
+40,Henri Rousseau,French,35,,5,7,114,478,,,,,
+46,Paul Gauguin,French,155,from 156 to 155,5,32,238,478,,,,,
+41,Georges Seurat,French,22,,5,5,186,478,,,,,
+33,Henri de Toulouse-Lautrec,French,41,,44,11,114,436,,,,,
+28,Henri Matisse,French,92,from 93 to 92,8,12,430,282,,,,,
+19,Albrecht Durer,German,142,from 143 to 142,11,13,572,374,German,572,364,220,2
+42,Paul Klee,German,93,from 94 to 93,11,9,704,374,,,,,
+18,El Greco,Greek,43,changed from 44 to 43,11,4,808,374,Greek,808,364,38,2
+23,Giotto di Bondone,Italian,59,changed from 60 to 59,9,7,964,374,,,,,
+24,Sandro Botticelli,Italian,82,,7,13,862,466,,,,,
+26,Leonardo da Vinci,Italian,70,from 72 to 70,12,6,862,538,,,,,
+48,Michelangelo,Italian,25,,5,5,984,660,,,,,
+47,Raphael,Italian,54,from 55 to 54,5,12,862,660,,,,,
+32,Titian,Italian,126,from 128 to 126,12,11,924,538,,,,,
+25,Caravaggio,Italian,23,changed from 24 to 23,6,4,994,466,,,,,
+0,Amedeo Modigliani,Italian,85,,9,10,862,374,Italian,862,364,170,2
+2,Diego Rivera,Mexican,30,changed from 31 to 30,5,5,108,570,Mexican,108,560,140,2
+17,Frida Kahlo,Mexican,60,,7,9,160,570,,,,,
+37,Edvard Munch,Norwegian,34,,5,7,132,682,Norwegian,132,672,68,2
+7,Andrei Rublev,Russian,43,changed from 44 to 43,7,7,264,570,Russian,264,560,292,2
+12,Mikhail Vrubel,Russian,86,,7,12,428,570,,,,,
+11,Kazimir Malevich,Russian,63,,7,9,336,570,,,,,
+22,Marc Chagall,"Russian, French",120,,5,24,318,682,,,,,
+1,Vasiliy Kandinskiy,"Russian,French",43,from 44 to 43,5,10,216,682,Russian-French,216,672,340,2
+27,Diego Velazquez,Spanish,55,changed from 56 to 55,8,7,714,638,,,,,
+16,Francisco Goya,Spanish,119,146 to 119,9,14,572,638,,,,,
+13,Pablo Picasso,Spanish,216,from220 to 216,11,20,644,526,,,,,
+44,Joan Miro,Spanish,50,from 51 to 50,9,6,786,638,,,,,
+5,Salvador Dali,Spanish,70,,10,7,572,526,Spanish,572,516,270,2
