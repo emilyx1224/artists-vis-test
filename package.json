@@ -46,6 +46,7 @@
       "autoprefixer": {}
     }
   },
+  "resolutions": { "eslint-loader": "2.1.2" },
   "browserslist": [
     "> 1%",
     "last 2 versions"
