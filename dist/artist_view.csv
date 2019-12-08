@@ -1,0 +1,51 @@
+id,name,row,col,x,y
+19,Albrecht Durer,12,12,71,89
+20,Alfred Sisley,12,10,197,89
+0,Amedeo Modigliani,11,8,303,89
+7,Andrei Rublev,9,5,389,89
+45,Andy Warhol,12,7,445,89
+35,Camille Pissarro,10,4,521,89
+25,Caravaggio,4,6,568,89
+3,Claude Monet,8,4,634,89
+2,Diego Rivera,8,4,680,89
+27,Diego Velazquez,12,5,726,89
+30,Edgar Degas,12,26,782,89
+6,Edouard Manet,9,5,71,251
+37,Edvard Munch,9,4,127,251
+18,El Greco,9,5,173,251
+39,Eugene Delacroix,4,5,229,251
+16,Francisco Goya,9,17,285,251
+17,Frida Kahlo,9,7,461,251
+41,Georges Seurat,5,5,537,251
+23,Giotto di Bondone,9,7,593,251
+9,Gustav Klimt,9,7,669,251
+34,Gustave Courbet,6,5,745,251
+28,Henri Matisse,9,11,897,251
+40,Henri Rousseau,7,5,1013,251
+33,Henri de Toulouse-Lautrec,5,9,801,251
+10,Hieronymus Bosch,10,7,71,383
+49,Jackson Pollock,2,6,147,383
+29,Jan van Eyck,9,5,213,383
+44,Joan Miro,9,6,269,383
+11,Kazimir Malevich,9,7,335,383
+26,Leonardo da Vinci,9,8,411,383
+22,Marc Chagall,10,12,497,383
+48,Michelangelo,4,7,623,383
+12,Mikhail Vrubel,10,9,699,383
+13,Pablo Picasso,10,22,795,383
+38,Paul Cezanne,5,5,1021,383
+46,Paul Gauguin,10,16,71,525
+42,Paul Klee,10,10,237,525
+14,Peter Paul Rubens,9,8,343,525
+15,Pierre-Auguste Renoir,10,18,429,525
+43,Piet Mondrian,9,5,615,525
+21,Pieter Bruegel,10,7,671,525
+47,Raphael,10,6,747,525
+31,Rembrandt,10,14,813,525
+4,Rene Magritte,10,10,959,525
+5,Salvador Dali,10,7,71,667
+24,Sandro Botticelli,10,9,147,667
+32,Titian,10,14,243,667
+1,Vasiliy Kandinskiy,8,6,389,667
+8,Vincent van Gogh,10,44,455,667
+36,William Turner,7,5,901,667
