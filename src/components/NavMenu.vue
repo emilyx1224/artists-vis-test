@@ -1,8 +1,8 @@
 <template>
 <div id='view-menu'>
    
-    <el-menu   text-color="#fff"  class="menu" :router="true" >
-        <el-menu-item v-for="item in menu" :index="item.id" :key="item.id" class="menu-item el-menu-vertical-demo" >
+    <el-menu   text-color="#fff"  class="menu" :router="true" :default-active="cur_view">
+        <el-menu-item v-for="item in menu" :index="item.id" :key="item.id" :id="item.id" class="menu-item el-menu-vertical-demo" >
             <template slot="title" >
                 <span v-if="item.id ==='color'"><img src='../../public/Asset_1-8.png' class="menu-icon"></span>
                 <span v-else-if="item.id === 'artist'"><img src='../../public/Asset_2-8.png' class="menu-icon"></span>
@@ -16,11 +16,22 @@
 
 <script>
 import menu from '@/config/menu-config'
-  export default {
+
+import eventHub from '@/eventHub'  
+import * as d3 from 'd3'
+
+export default {
       data () {
           return {
-              menu: menu
+              menu: menu,
+              cur_view: null
           }
+      },
+      mounted() {
+          var self = this;
+          eventHub.$on('viewChanged', (view) => {
+              self.cur_view = view.split('-')[0]
+          })
       }
   }
 </script>
@@ -86,7 +97,6 @@ import menu from '@/config/menu-config'
 
 .el-menu-item.is-active{
     color: white !important;
-    /* border-right:4px #fc766a solid; */
     background-color:#fc766a;
 }
 

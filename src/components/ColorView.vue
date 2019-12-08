@@ -432,16 +432,16 @@ export default {
 				prev = prev + widthper;
 			}
 			detailsvg.append("rect")
-				.attr("width", 28)
-				.attr("height", 28)
-				.attr('transform', 'translate('+[wid-70, 45]+')')
+				.attr("width", 38)
+				.attr("height", 38)
+				.attr('transform', 'translate('+[1320, 30]+')')
 				.attr('fill', "rgba(255, 255, 255, 0.2)");
 			detailsvg.append("svg:image")
 				.attr('id','close')
-				.attr('transform', 'translate('+[wid-65, 50]+')')
+				.attr('transform', 'translate('+[1325, 35]+')')
 				.attr('fill', 'white')
-				.style('width', 18)
-				.style('height', 18)
+				.style('width', 28)
+				.style('height', 28)
 				.style("font", "20px roboto")
 				.style("cursor", "pointer")
 				.on("click", function() {
@@ -757,6 +757,7 @@ export default {
 				.attr('transform', 'translate('+[1, 149]+')')
 				.style('width', 250)
 				.style('height', 20)
+				.style("opacity", 0.6)
 			d3.select("#x").style("display","none");
 				
 			function updateBar(data, select){

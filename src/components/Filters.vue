@@ -86,7 +86,7 @@
             <el-col :span="3">
                 <p class="slider-mark">1</p>
             </el-col>
-            <el-col :span="17">
+            <el-col :span="18">
                 
                 <el-slider
                     v-model="color_num_values"
@@ -119,11 +119,13 @@
                 <el-button class="text-btn-style" type="text" size="mini" @click="clearPaintingYear">Clear</el-button>
                 </div>
             </el-col>
+         </el-row>
+         <el-row :gutter="0">
             <el-col :span="3">
                 <p class="slider-mark">1267</p>
             </el-col>
             
-            <el-col :span="17">
+            <el-col :span="18">
 
                 <el-slider 
                     v-model="year_values"
@@ -187,10 +189,13 @@
                 </div>
 
             </el-col>
+         </el-row>
+        <el-row :gutter="0" >
              <el-col :span="3">
                 <p class="slider-mark">0%</p>
             </el-col>
-            <el-col :span="17">
+       
+            <el-col :span="18">
                 
                 <el-slider
                     v-model="intensity_values"

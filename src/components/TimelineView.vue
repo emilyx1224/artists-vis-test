@@ -573,13 +573,15 @@ export default {
 					.attr("width", 140)
 					.attr("height", 30)
 					.attr('x', rectx+20)
-					.attr('y', 630)
-					.attr('fill', '#d8d8d8')
+					.attr('y', 700)
+					.attr('fill', '#2e2e2e')
+					.attr("rx",2)
+					.attr("ry",2)
 					.style("opacity", 0);
 				detailsvg.append("text")
 					.attr("id", "t".concat(ind.toString()))
-					.attr('x', rectx+20)
-					.attr('y', 650)
+					.attr('x', rectx+24)
+					.attr('y', 720)
 					.attr('fill', 'white')
 					.style("font", "18px roboto")
 					.style("opacity", 0)
@@ -587,17 +589,17 @@ export default {
 				prev = prev + widthper;
 			}
 			detailsvg.append("rect")
-				.attr("width", 28)
-				.attr("height", 28)
-				.attr('transform', 'translate('+[wid-70, 45]+')')
+				.attr("width", 38)
+				.attr("height", 38)
+				.attr('transform', 'translate('+[1320, 30]+')')
 				.attr('fill', "rgba(255, 255, 255, 0.2)");
 			detailsvg.append("svg:image")
 				.attr('id','close')
-				.attr('transform', 'translate('+[wid-65, 50]+')')
+				.attr('transform', 'translate('+[1325, 35]+')')
 				.attr('fill', 'white')
-				.style('width', 18)
-				.style('height', 18)
-				.style("font", "20px times")
+				.style('width', 28)
+				.style('height', 28)
+				.style("font", "20px roboto")
 				.style("cursor", "pointer")
 				.on("click", function() {
 					modal.style.display = "none";
@@ -634,24 +636,26 @@ export default {
 				.attr('x', 114)
 				.attr('y', 30)
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[1000, 70]+')')
+				.attr('transform', 'translate('+[960, 70]+')')
 				.attr('fill', 'white')
 				.attr('dy', '0')
-				.style("font", "18px times")
+				.style("font", "18px roboto slab")
+				.style("font-weight","bold")
 				.text(selected.name_of_pic)
-				.call(this.wrap, 240);
+				.call(this.wrap, 320);
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[1000, 110]+')')
+				.attr('transform', 'translate('+[960, 110]+')')
 				.attr('fill', 'white')
-				.style("font", "16px times")
+				.style("font", "14px roboto")
 				.text(selected.artist_name.concat(', ',selected.year_of_pic));
 				
 			// thumbmail
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[955, 150]+')')
+				.attr('transform', 'translate('+[960, 154]+')')
 				.attr('fill', 'white')
-				.style("font", "16px times")
-				.text('Painting used similar colors');
+				.style("font", "14px roboto slab")
+				.style("font-weight","bold")
+				.text('Paintings with Similar Main Color');
 			var piclst = selected.similar_pics.split(',');
 			var picone = piclst[0].split('_');
 			var pictwo = piclst[1].split('_');
@@ -699,14 +703,14 @@ export default {
 					d3.select("#txtone").style("opacity",0);
 				});
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[956, 175]+')')
+				.attr('transform', 'translate('+[960, 180]+')')
 				.attr('id', 'txtone')
 				.attr('fill', 'white')
 				.attr('dy', '0')
-				.style("font", "10px times")
+				.style("font", "10px roboto")
 				.style('opacity', 0)
 				.text(objone.name_of_pic)
-				.call(this.wrap, 100);
+				.call(this.wrap, 92);
 			var artistimage = detailsvg.append('image')
 				.attr('xlink:href', 'sampled_images/'.concat(nametwo,'/',piclst[1]))
 				.attr('id', 'pictwo')
@@ -724,13 +728,13 @@ export default {
 				});
 			detailsvg.append("text")
 				.attr('id', 'txttwo')
-				.attr('transform', 'translate('+[1066, 175]+')')
+				.attr('transform', 'translate('+[1070, 180]+')')
 				.attr('fill', 'white')
 				.attr('dy', '0')
-				.style("font", "10px times")
+				.style("font", "10px roboto")
 				.style('opacity', 0)
 				.text(objtwo.name_of_pic)
-				.call(this.wrap, 100);
+				.call(this.wrap, 92);
 			var artistimage = detailsvg.append('image')
 				.attr('id', 'picthree')
 				.attr('xlink:href', 'sampled_images/'.concat(namethree,'/',piclst[2]))
@@ -748,47 +752,48 @@ export default {
 				});
 			detailsvg.append("text")
 				.attr('id', 'txtthree')
-				.attr('transform', 'translate('+[1176, 175]+')')
+				.attr('transform', 'translate('+[1180, 180]+')')
 				.attr('fill', 'white')
 				.attr('dy', '0')
-				.style("font", "10px times")
+				.style("font", "10px roboto")
 				.style('opacity', 0)
 				.text(objthree.name_of_pic)
-				.call(this.wrap, 100);	
+				.call(this.wrap, 92);	
 			// Artist Info
 			var artistimage = detailsvg.append('image')
 				.attr('xlink:href', 'Artists_photo_square/'.concat(selected.id, '_',selected.artist_name.split(' ').join('_'),'.jpg'))
 				.attr('width', 80)
 				.attr('height', 80)
-				.attr('x', wid-520)
-				.attr('y', 150+h);
+				.attr('x', 960)
+				.attr('y', 304);
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[wid-425, 162+h]+')')
+				.attr('transform', 'translate('+[1060, 320]+')')
 				.attr('fill', 'white')
-				.style("font", "15px times")
+				.style("font", "18px roboto slab")
+				.style("font-weight", "bold")
 				.text(selected.artist_name);
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[wid-425, 178+h]+')')
+				.attr('transform', 'translate('+[1060, 340]+')')
 				.attr('fill', 'white')
-				.style("font", "15px times")
+				.style("font", "12px roboto")
 				.text(selected.year_of_birth.concat(' ~ ',selected.year_of_birth));
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[wid-425, 195+h]+')')
+				.attr('transform', 'translate('+[1060, 360]+')')
 				.attr('fill', 'white')
-				.style("font", "15px times")
+				.style("font", "12px roboto")
 				.text(selected.nationality);
 			var obj = artist_info.find(o => o.id === selected.id);
 			//console.log(obj);
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[wid-425, 210+h]+')')
+				.attr('transform', 'translate('+[1060, 380]+')')
 				.attr('fill', 'white')
-				.style("font", "15px times")
+				.style("font", "12px roboto")
 				.text(obj.number_of_paintings.concat(' paintings'));
 			detailsvg.append("text")
-				.attr('transform', 'translate('+[wid-425, 228+h]+')')
+				.attr('transform', 'translate('+[1060, 400]+')')
 				.attr('fill', 'white')
 				.attr('dy', 0)
-				.style("font", "15px times")
+				.style("font", "12px roboto")
 				.text(selected.genre.split(',').join(' '))
 				.call(this.wrap, 120);
 			// console.log('-------------');	
@@ -840,7 +845,7 @@ export default {
 					"translate(" + 120 + " ," + 180 + ")")
 			  .style("text-anchor", "middle")
 			  .style("fill", "white")
-			  .style("font", "10px times")
+			  .style("font", "10px roboto")
 			  .text("Hue");
 			bar.append("text") 
 			  .attr("class", "axis")     			
@@ -849,14 +854,15 @@ export default {
 			  .attr("x", -70)
 			  .style("text-anchor", "middle")
 			  .style("fill", "white")
-			  .style("font", "10px times")
-			  .text("Numbers");
+			  .style("font", "10px roboto")
+			  .text("Frequency");
 			bar.append("text")    			
 			  .attr("transform",
-					"translate(" + 0 + " ," + -40 + ")")
+					"translate(" + -20 + " ," + -40 + ")")
 			  .style("fill", "white")
-			  .style("font", "14px times")
-			  .text(selected.artist_name.concat("'s overall color usage"));
+			  .style("font", "14px roboto slab")
+			  .style("font-weight","bold")
+			  .text(selected.artist_name.concat("'s Overall Color Usage"));
 			bar.selectAll("rect")
 			  .data(bins)
 			  .enter()
@@ -866,7 +872,7 @@ export default {
 				.attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; })
 				.attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
 				.attr("height", function(d) { return barh - y(d.length); })
-				.style("fill", "rgba(255,255,255,0.8)")
+				.style("fill", "rgba(255,255,255,0.6)")
 				
 			var current = "Hue";
 			bar.append('g')
@@ -878,6 +884,7 @@ export default {
 				.text('Hue')
 				.style("fill", "#fc766a")
 				.style("font-size", 12)
+				.style("text-decoration","underline")
 				.on("click", function(d) { updateBar(harr, "Hue");});
 			bar.append('g')
 				.style("cursor", "pointer")
@@ -888,6 +895,7 @@ export default {
 				.text("Saturation")
 				.style("fill", 'white')
 				.style("font-size", 12)
+				.style("text-decoration","underline")
 				.on("click", function(d) { updateBar(sarr, "Saturation"); });
 			bar.append('g')
 				.style("cursor", "pointer")
@@ -898,6 +906,7 @@ export default {
 				.text('Value')
 				.style("fill", 'white')
 				.style("font-size", 12)
+				.style("text-decoration","underline")
 				.on("click", function(d) { updateBar(varr, "Value"); });
 			bar.append("svg:image")
 				.attr("class", "axis")
@@ -946,7 +955,8 @@ export default {
 					.attr("id","x")
 					.attr("class", "axiswhite")
 					.attr("transform", "translate(0," + barh + ")")
-					.call(d3.axisBottom(x));
+					.call(d3.axisBottom(x))
+					.style("line-stroke","white");
 
 				var histogram = d3.histogram()
 					.value(function(d) { return d; })
@@ -966,7 +976,7 @@ export default {
 						"translate(" + 120 + " ," + 180 + ")")
 				  .style("text-anchor", "middle")
 				  .style("fill", "white")
-				  .style("font", "10px times")
+				  .style("font", "10px roboto")
 				  .text(select);
 				  
 				if(select == "Hue"){
@@ -986,8 +996,8 @@ export default {
 				  .attr("x", -70)
 				  .style("text-anchor", "middle")
 				  .style("fill", "white")
-				  .style("font", "10px times")
-				  .text("Numbers");
+				  .style("font", "10px roboto")
+				  .text("Frequency");
 				bar.selectAll("rect")
 				  .data(bins)
 				  .enter()
@@ -997,7 +1007,7 @@ export default {
 					.attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; })
 					.attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
 					.attr("height", function(d) { return barh - y(d.length); })
-					.style("fill", "rgba(255,255,255,0.8)")
+					.style("fill", "rgba(255,255,255,0.6)")
 				}
 			}
     }
