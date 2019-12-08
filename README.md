@@ -4,7 +4,7 @@
 
 # How to run the code
 
-### Download image files for paintings and artist portraits, put the two folders under the 'public' folder
+### Download image files for paintings and artist portraits, put the two folders under the 'public' folder (currently files already in GIT, don't need to download from Google Drive)
 `Google drive link: https://drive.google.com/open?id=1JeY_LZKaQXPkfkjiRHK4VINM7xaFnV9H`
 
 ### Install packages
