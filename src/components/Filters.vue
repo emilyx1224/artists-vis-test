@@ -403,6 +403,10 @@ export default {
         },
     },
     mounted() {
+        var self = this;
+        eventHub.$on('viewChanged', () => {
+            self.reset();
+        })
         eventHub.$on('loadArtistInfo', (artistsInfo) => {
             var self = this;
             var artist_set = new Set();
@@ -482,7 +486,7 @@ h5 {
  .el-slider{
     -webkit-appearance: none;
     /* background: hotpink; */
-    width: 170px;
+    width: 180px;
     height: 2px;
     outline: none;
     margin-bottom: 20px;
