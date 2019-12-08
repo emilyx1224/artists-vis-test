@@ -81,6 +81,7 @@
                 </div>
 
             </el-col>
+            <el-row :gutter="0">
             <el-col :span="3">
                 <p class="slider-mark">1</p>
             </el-col>
@@ -98,6 +99,7 @@
             <el-col :span="3">
                 <p class="slider-mark">10</p>
             </el-col>
+            </el-row>
         </el-row>
 
         <el-row :gutter="0">
