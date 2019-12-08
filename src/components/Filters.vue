@@ -85,7 +85,7 @@
             <el-col :span="3">
                 <p class="slider-mark">1</p>
             </el-col>
-            <el-col :span="18">
+            <el-col :span="17">
                 
                 <el-slider
                     v-model="color_num_values"
@@ -122,7 +122,7 @@
                 <p class="slider-mark">1267</p>
             </el-col>
             
-            <el-col :span="18">
+            <el-col :span="17">
 
                 <el-slider 
                     v-model="year_values"
@@ -189,7 +189,7 @@
              <el-col :span="3">
                 <p class="slider-mark">0%</p>
             </el-col>
-            <el-col :span="18">
+            <el-col :span="17">
                 
                 <el-slider
                     v-model="intensity_values"
@@ -476,7 +476,7 @@ h5 {
  .el-slider{
     -webkit-appearance: none;
     /* background: hotpink; */
-    width: 180px;
+    width: 170px;
     height: 2px;
     outline: none;
     margin-bottom: 20px;
