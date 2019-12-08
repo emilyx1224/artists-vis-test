@@ -1,6 +1,6 @@
 # Artists-vis (Team 5)
 
-## link to the demo: https://reverent-snyder-cad44b.netlify.com
+### link to the demo: https://reverent-snyder-cad44b.netlify.com
 
 # How to run the code
 
