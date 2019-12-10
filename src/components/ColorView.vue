@@ -440,8 +440,10 @@ export default {
 				.attr('id','close')
 				.attr('transform', 'translate('+[1325, 35]+')')
 				.attr('fill', 'white')
-				.style('width', 28)
-				.style('height', 28)
+				.attr("width", "28px")
+				.attr("height", "28px")
+					// .style('width', "28px")
+					// .style('height', "28px")
 				.style("font", "20px roboto")
 				.style("cursor", "pointer")
 				.on("click", function() {
@@ -755,9 +757,11 @@ export default {
 				.attr("class", "axis")
 				.attr('xlink:href', 'hue-bar-256.png')
 				.attr('transform', 'translate('+[1, 149]+')')
-				.style('width', 250)
-				.style('height', 20)
-				.style("opacity", 0.6)
+				// .style('width', 250)
+				// .style('height', 20)
+				.attr("width", "250px")
+				.attr("height", "20px")
+				.style("opacity", 0.6);
 			d3.select("#x").style("display","none");
 				
 			function updateBar(data, select){
