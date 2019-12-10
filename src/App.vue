@@ -62,6 +62,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Slab&display=swap');
+
 #app {
   font-family: 'Roboto Slab','Montserrat', 'Roboto', Helvetica,  sans-serif;
   -webkit-font-smoothing: antialiased;

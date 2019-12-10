@@ -132,7 +132,7 @@ export default {
             });
 
             this.timeScale = d3.scaleLinear().domain([minYear, maxYear]).range([0, timeBarWidth]);
-            this.timeAxis = d3.axisTop(this.timeScale);
+             this.timeAxis = d3.axisTop(this.timeScale).tickFormat(d3.format("d"));
 
             this.xScale = d3.scaleLinear().domain([1267,1987]).range([0, this.width]);
             this.yScale = d3.scaleLinear().domain([140, 0]).range([0, this.height]);
@@ -300,7 +300,7 @@ export default {
                     .attr('class', 'text-d-' + name)
                     .attr('x', x2 - 12)
                     .attr('y', line_length + 15)
-                    .text('b.' + year_of_death)
+                    .text('d.' + year_of_death)
                     .attr('font-size', '8px')
                     .style('fill', line_color)
                     .style('opacity', 0);
@@ -391,7 +391,7 @@ export default {
                 .transition()
                 .duration(0);
 
-            this.xAxis.call(d3.axisBottom(this.xScale));
+            this.xAxis.call(d3.axisBottom(this.xScale).tickFormat(d3.format("d")));
 
             eventHub.$emit('picAmountChanged', filteredData.length);
         },
@@ -776,7 +776,7 @@ export default {
 				.attr('transform', 'translate('+[1060, 340]+')')
 				.attr('fill', 'white')
 				.style("font", "12px roboto")
-				.text(selected.year_of_birth.concat(' ~ ',selected.year_of_birth));
+				.text(selected.year_of_birth.concat(' ~ ',selected.year_of_death));
 			detailsvg.append("text")
 				.attr('transform', 'translate('+[1060, 360]+')')
 				.attr('fill', 'white')

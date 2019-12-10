@@ -13,23 +13,25 @@
             <img :src="this.img_path">
         </el-col> -->
     <div id="pic-preview">
-        <el-row>
-            <div class="preview-container">
-                <div class="img-container">
-                    <img :src="this.img_path" class="img-preview">
-                     <div class="text-bg">
-                        <div class="preview-text line1">{{this.img_name}} ({{this.img_year}})</div>
-                        <div class="preview-text line2">{{this.artist_name}}</div>
+        <el-row :gutter="0">
+            <el-col :span="22"> 
+                <div class="preview-container">
+                    <div class="img-container">
+                        <img :src="this.img_path" class="img-preview">
+                        <div class="text-bg">
+                            <div class="preview-text line1">{{this.img_name}} ({{this.img_year}})</div>
+                            <div class="preview-text line2">{{this.artist_name}}</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-                <!-- <el-col> -->
-            <div class="colorBar-container">
-                <svg class="colorBar"></svg>
-            </div>
-                <!-- </el-col> -->
-               
-           
+            </el-col>
+            <el-col :span="2"> 
+                    <!-- <el-col> -->
+                <div class="colorBar-container">
+                    <svg class="colorBar"></svg>
+                </div>
+                    <!-- </el-col> -->
+            </el-col>
         </el-row>
     </div>
 </template>

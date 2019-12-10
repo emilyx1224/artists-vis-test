@@ -623,7 +623,7 @@ export default {
 						modal.style.display = "none";
 						// modal.style.paddingTop = "50px";
 						detailsvg.selectAll("*").remove();})
-					.attr("xlink:href", "close.png");
+					.attr("xlink:href", "./close.png");
 				detailsvg.append("rect")
 					.attr("width", 820)
 					.attr("height", 660)
@@ -794,7 +794,7 @@ export default {
 					.attr('transform', 'translate('+[1060, 340]+')')
 					.attr('fill', 'white')
 					.style("font", "12px roboto")
-					.text(selected.year_of_birth.concat(' ~ ',selected.year_of_birth));
+					.text(selected.year_of_birth.concat(' ~ ',selected.year_of_death));
 				detailsvg.append("text")
 					.attr('transform', 'translate('+[1060, 360]+')')
 					.attr('fill', 'white')
